@@ -25,7 +25,7 @@ if __name__ == "__main__":
     model1=model2.to(device)
    
     model1=torch.load('./0.651.pth')
-    data_test,te_label,conte,data_tevoxel=get_data('/home/zzy/test')
+    data_test,te_label,conte,data_tevoxel=get_data('/home/zzy/test') #将此处的测试集目录更换
     filename="Submission2.csv"
     test_model1(model1,data_test,conte,filename)
    
